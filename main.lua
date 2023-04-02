@@ -49,10 +49,10 @@ function autoscore()
         if v.Name == "Ball" and v.ClassName == "Part" and v.Parent.Name == "Balls" and _G.Enabled == true then
             local team = player.Character.Team.Value
             ball = v.ContactPart
-            ball.CanCollide = false
+            ball.CanCollide = false 
             ball.Parent.CanCollide = false
             if ball.Size ~= Vector3.new(4, 4, 4) then
-                ball.Size = Vector3.new(4, 4, 4)
+                ball.Size = Vector3.new(4, 4, 4) --this stuff means nothing mr game devs
             end
             if ball.Transparency ~= 0.5 then
                 ball.Transparency = 0.5 
@@ -62,7 +62,7 @@ function autoscore()
                 local tweeninfo = TweenInfo.new(0.1, Enum.EasingStyle.Linear)
                 local goal = Vector3.new(ball.Position.X, ball.Position.Y, ball.Position.Z)
 	            local Animation = tween_s:Create(hrp, tweeninfo, {Position = goal})
-	            Animation:Play()
+	            Animation:Play()                                                         --THIS is what yall want to fix
             elseif ball.Parent.Owner.Value ~= nil and ball.Parent.Owner.Value ~= player.Character then
                 local tween_s = game:GetService("TweenService")
                 local tweeninfo = TweenInfo.new(0.1, Enum.EasingStyle.Linear)
