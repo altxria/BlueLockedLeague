@@ -2,6 +2,7 @@
 altxria#7302
 hiii game devs, yall can patch it i prob wont fix it :)
 if ur not a game dev, u can do whatever you want with this code :))))
+just credit me maybe possibly pwese?
 --]]
 _G.Enabled = true
 local repo = 'https://raw.githubusercontent.com/wally-rblx/LinoriaLib/main/'
